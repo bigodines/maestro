@@ -12,9 +12,10 @@ const router = new Router();
  * Base route
  */
 router.get('/', async (ctx, next) => {
-  await next();
   ctx.body = "----8------";
   ctx.status = 200;
+
+  await next();
 });
 
 export default router;
